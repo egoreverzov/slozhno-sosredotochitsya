@@ -1,93 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root .theme_light {
   --accent-color: #353430;
   --accent-another-color: #353430;
-  --accent-light-color: #FF8DCB;
-  --shadow-light-color: #FF0070;
+  --bck-accent-color: #FF8DCB;
+  --link-accent-color: #FF8DCB;
   --reg-text-color: #353430;
   --main-heading-color: #FFC2E6;
-}
-
-.page.theme_light {
-  background-image: url(../images/cover-image-light.png);
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --bck-img: url(../images/cover-image-light.png);
 }
 
 .theme_light .header__icon {
   display: none;
 }
 
-.theme_light .header__theme-menu-button_type_dark {
-  border: none;
-}
-
-.theme_light .header__theme-menu-button_type_light {
-  border: 1px solid var(--accent-color, #353430);
-}
-
-.theme_light .header__heading {
-  text-shadow: 4px 4px 0 var(--shadow-light-color, #FF0070);
-}
-
-.theme_light .footer__heading {
-  text-shadow: 2px 2px 0 var(--shadow-light-color, #FF0070);
-}
-
-.theme_light .title-decor {
-  background-color: var(--accent-light-color, #FF8DCB);
-}
-
-.theme_light .cards-content__link {
-  text-shadow: 2px 2px 0 var(--accent-light-color, #FF8DCB);
-}
-
 @media (prefers-color-scheme: light) {
   :root .theme_auto {
     --accent-color: #353430;
     --accent-another-color: #353430;
-    --accent-light-color: #FF8DCB;
-    --shadow-light-color: #FF0070;
+    --bck-accent-color: #FF8DCB;
+    --link-accent-color: #FF8DCB;
     --reg-text-color: #353430;
-    --main-heading-color: #FFC2E6;  
+    --main-heading-color: #FFC2E6;
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --bck-img: url(../images/cover-image-light.png);
     }
 
-    .page.theme_auto {
-      background-image: url(../images/cover-image-light.png);
-    }
-    
-    .theme_auto .header__heading {
-      text-shadow: 4px 4px 0 var(--shadow-light-color, #FF0070);
-    }
-    
-    .theme_auto .footer__heading {
-      text-shadow: 2px 2px 0 var(--shadow-light-color, #FF0070);
-    }
-    
-    .theme_auto .title-decor {
-      background-color: var(--accent-light-color, #FF8DCB);
-    }
-    
-    .theme_auto .cards-content__link {
-      text-shadow: 2px 2px 0 var(--accent-light-color, #FF8DCB);
+    .page.theme_light {
+      background-color:#FFF1F7;
     }
 
     .theme_auto .header__icon {
       display: none;
-    }
-
-    .theme_auto .header__theme-menu-button_type_dark {
-      border: none;
-    }
-    
-    .theme_auto .header__theme-menu-button_type_light {
-      border: none;
-    }
-  
-    .theme_auto .header__theme-menu-button_type_auto {
-      border: 1px solid var(--accent-color, #353430);
     }
 }

@@ -1,11 +1,9 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
 :root .theme_dark {
   --main-font: 'IBM Plex mono';
   --accent-color: #FF0070;
+  --bck-accent-color: #FF0070;
+  --link-accent-color: #FF0070;
+  --shadow-color: #FF0070;
   --accent-another-color: #000028;
   --reg-text-color: #F1B2CE;
   --main-heading-color: #DB00FF;
@@ -17,8 +15,34 @@
   --bck-img: url(../images/cover-image-dark.png);
 }
 
-.page.theme_dark {
-  .header__icon {
-    display: inline-block;
+@media (prefers-color-scheme: dark) {
+  :root .theme_auto {
+    --main-font: 'IBM Plex mono';
+    --accent-color: #FF0070;
+    --bck-accent-color: #FF0070;
+    --link-accent-color: #FF0070;
+    --shadow-color: #FF0070;
+    --accent-another-color: #000028;
+    --reg-text-color: #F1B2CE;
+    --main-heading-color: #DB00FF;
+    --hover-color: rgba(255, 0, 112, 0.4);
+    --text-size: 18px;
+    --offset: 20px;
+    --small-offset: 10px;
+    --section-offset: 80px;
+    --small-section-offset: 60px;
+    --bck-img: url(../images/cover-image-dark.png);
   }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color, #FF0070);
+  }
+
+  .page.theme_auto {
+    background-color: var(--accent-another-color, #000028);
+  }
+}
+
+.header__icon {
+  display: inline-block;
 }

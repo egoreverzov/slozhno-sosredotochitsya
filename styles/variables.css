@@ -5,12 +5,17 @@
 :root {
   --main-font: 'IBM Plex mono';
   --accent-color: #FF0070;
+  --bck-accent-color: #FF0070;
+  --link-accent-color: #FF0070;
+  --shadow-color: #FF0070;
   --accent-another-color: #000028;
   --reg-text-color: #F1B2CE;
   --main-heading-color: #DB00FF;
+  --hover-color: rgba(255, 0, 112, 0.4);
   --text-size: 18px;
   --offset: 20px;
   --small-offset: 10px;
   --section-offset: 80px;
   --small-section-offset: 60px;
+  --bck-img: url(../images/cover-image-dark.png);
 }

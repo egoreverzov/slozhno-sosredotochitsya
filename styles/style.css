@@ -273,8 +273,7 @@
 }
 
 .header__theme-menu-button:focus,
-.cards-content__link:focus,
-.header__theme-menu-button_active:focus {
+.cards-content__link:focus {
   outline: none;
 }
 

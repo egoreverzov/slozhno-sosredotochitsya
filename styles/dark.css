@@ -18,7 +18,10 @@
 
 .theme_dark .header__icon {
   display: inline-block;
+  /* если у пользователя по умолчанию светлая тема, то prefers-color-scheme: light скрывает иконку в тёмной теме тоже, поэтому добавил сюда этот класс  */
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   :root .theme_auto {
@@ -41,6 +44,3 @@
   }
 }
 
-.header__icon {
-  display: inline-block;
-}

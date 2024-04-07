@@ -5,6 +5,7 @@
   --link-accent-color: #FF0070;
   --shadow-color: #FF0070;
   --accent-another-color: #000028;
+  --bck-color: #000028;
   --reg-text-color: #F1B2CE;
   --main-heading-color: #DB00FF;
   --text-size: 18px;
@@ -23,6 +24,7 @@
     --link-accent-color: #FF0070;
     --shadow-color: #FF0070;
     --accent-another-color: #000028;
+    --bck-color: #000028;
     --reg-text-color: #F1B2CE;
     --main-heading-color: #DB00FF;
     --hover-color: rgba(255, 0, 112, 0.4);
@@ -32,14 +34,6 @@
     --section-offset: 80px;
     --small-section-offset: 60px;
     --bck-img: url(../images/cover-image-dark.png);
-  }
-
-  .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color, #FF0070);
-  }
-
-  .page.theme_auto {
-    background-color: var(--accent-another-color, #000028);
   }
 }
 
